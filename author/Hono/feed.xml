@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="https://han-sang-ho.github.io/author/Hono/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://han-sang-ho.github.io/" rel="alternate" type="text/html" />
+  <updated>2021-03-07T23:25:04+09:00</updated>
+  <id>https://han-sang-ho.github.io/author/Hono/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">호노의 Technical Blog | </title>
+  
+
+  
+    <subtitle>코딩 공부장</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Python - 계산기를 만들어보자</title>
+      <link href="https://han-sang-ho.github.io/python-calculator" rel="alternate" type="text/html" title="Python - 계산기를 만들어보자" />
+      <published>2020-03-08T05:20:00+09:00</published>
+      <updated>2020-03-08T05:20:00+09:00</updated>
+      <id>https://han-sang-ho.github.io/python-calculator</id>
+      <content type="html" xml:base="https://han-sang-ho.github.io/python-calculator">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Python project. &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-calculator&quot;&gt;Python - 계산기를 만들어보자&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-memo&quot;&gt;Python - 메모장을 만들어보자&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;이 페이지는 파이썬 공부장입니다!&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hono</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="python" />
+      
+
+      
+        <summary type="html">Python project. Python - 계산기를 만들어보자 Python - 메모장을 만들어보자</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Python - 메모장을 만들어보자</title>
+      <link href="https://han-sang-ho.github.io/python-memo" rel="alternate" type="text/html" title="Python - 메모장을 만들어보자" />
+      <published>2020-03-08T05:20:00+09:00</published>
+      <updated>2020-03-08T05:20:00+09:00</updated>
+      <id>https://han-sang-ho.github.io/python-memo</id>
+      <content type="html" xml:base="https://han-sang-ho.github.io/python-memo">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Python project. &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-calculator&quot;&gt;Python - 계산기를 만들어보자&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-memo&quot;&gt;Python - 메모장을 만들어보자&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;이 페이지는&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hono</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="python" />
+      
+
+      
+        <summary type="html">Python project. Python - 계산기를 만들어보자 Python - 메모장을 만들어보자</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Jekyll - 나의 블로그를 만들어보자</title>
+      <link href="https://han-sang-ho.github.io/jekyll-basic" rel="alternate" type="text/html" title="Jekyll - 나의 블로그를 만들어보자" />
+      <published>2020-03-08T05:20:00+09:00</published>
+      <updated>2020-03-08T05:20:00+09:00</updated>
+      <id>https://han-sang-ho.github.io/jekyll-basic</id>
+      <content type="html" xml:base="https://han-sang-ho.github.io/jekyll-basic">&lt;p&gt;이 페이지는 지킬 공부장입니다!&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hono</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="jekyll" />
+      
+
+      
+        <summary type="html">이 페이지는 지킬 공부장입니다!</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
