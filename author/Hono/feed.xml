@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://han-sang-ho.github.io/author/Hono/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://han-sang-ho.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-03-11T20:39:54+09:00</updated>
+  <updated>2021-03-11T22:23:54+09:00</updated>
   <id>https://han-sang-ho.github.io/author/Hono/feed.xml</id>
 
   
@@ -123,7 +123,26 @@
       <published>2020-03-08T05:20:00+09:00</published>
       <updated>2020-03-08T05:20:00+09:00</updated>
       <id>https://han-sang-ho.github.io/jekyll-basic</id>
-      <content type="html" xml:base="https://han-sang-ho.github.io/jekyll-basic">&lt;p&gt;이 페이지는 지킬 공부장입니다!&lt;/p&gt;</content>
+      <content type="html" xml:base="https://han-sang-ho.github.io/jekyll-basic">&lt;p&gt;Jekyll과 Github를 이용해서 자신만의 블로그를 만들어보자.&lt;/p&gt;
+
+&lt;p&gt;우선 개발환경으로는 Ruby를 사용할 것이고 에디터는  Window 10으로 작업&lt;/p&gt;
+
+&lt;p&gt;네이버 블로그나 다음의 티스토리 같은 블로그를 사용하지 않는 이유는 버튼 몇 개만 누르면 바로바로 완성된 블로그를 만들어 주겠지만 커스텀마이징이 많이 제한된다는 점과 코드들을 올렸을 때 가독성이 떨어지기 때문이다.
+(그리고… 나름 개발자를 꿈꾸는데 블로그 하나 정도는 만들어야 하지 않겠나,,,? 하하…)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/79001968/110789186-ee602500-82b2-11eb-9385-79101cfb964a.png&quot; alt=&quot;jekyll-logo&quot; style=&quot;zoom: 50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/79001968/110790844-de494500-82b4-11eb-9504-10493a923fe1.png&quot; alt=&quot;GitHub-logo&quot; style=&quot;zoom: 50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/79001968/110790606-94605f00-82b4-11eb-9aa0-7263869deb16.png&quot; alt=&quot;Ruby logo&quot; style=&quot;zoom: 80%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Jekyll은 간단하게 말해서 테마 Github는 페이지 Ruby는 개발언어(툴)이라고 생각하면 편하다. (자세하게는 뒤에 가서)&lt;/p&gt;
+
+&lt;p&gt;우리는 Jekyll의 테마 중 Ghost라는 테마를 사용할 것이다.&lt;/p&gt;
+
+&lt;p&gt;Window 환경에서 주의해야 할 점이 있다. 컴퓨터 계정의 ID가 한글로 되어 있는 경우 여러 문제가 발생하니 Window 계정 ID를 한글 계정으로 바꾸자.&lt;/p&gt;
+
+&lt;p&gt;-&lt;em&gt;여기서 Tip을 하나  주자면 원래 설정 - 계정 - 사용자 정보 이런 식으로 컴퓨터 자체에서 바꿨는데 최근에 Window 10을 업데이트했고 Microsoft에 계정을 사용 중이라면 Microsoft 홈페이지에서 내 정보 변경을 통해 바꿔야 할 가능성이 높다.&lt;/em&gt;&lt;/p&gt;</content>
 
       
       
@@ -144,7 +163,7 @@
       
 
       
-        <summary type="html">이 페이지는 지킬 공부장입니다!</summary>
+        <summary type="html">Jekyll과 Github를 이용해서 자신만의 블로그를 만들어보자.</summary>
       
 
       
