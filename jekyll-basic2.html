@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>Jekyll - 나의 블로그를 수정해보자 & Publishing</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
+
+    <!-- custom.css -->
+    <link rel="stylesheet" type="text/css" href="/assets/built/custom.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- 웹폰트 추가 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+
+    <!-- syntax.css 추가 -->
+    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
+
+
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <style>.hljs { background: none; }</style>
+
+    <!--[if IE]>
+        <style>
+            p, ol, ul{
+                width: 100%;
+            }
+            blockquote{
+                width: 100%;
+            }
+        </style>
+    <![endif]-->
+    
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="코딩 공부장" />
+    <link rel="shortcut icon" href="https://HAN-Sang-Ho.github.io/assets/built/images/favicon.jpg" type="image/png" />
+    <link rel="canonical" href="https://HAN-Sang-Ho.github.io/jekyll-basic2" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="호노의 Technical Blog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jekyll - 나의 블로그를 수정해보자 & Publishing" />
+    <meta property="og:description" content="저번 포스팅에서는 여러가지 환경 구축과 블로그를 내장 웹서버를 통해 블로그를 내화면에 띄우는데 까지 해봤다. 이번 포스팅은 블로그를 내가 원하는 모양 수정하는 법과 GitHub Page에 내 블로그를 개설하는 방법에 대해서 다루도록 하겠다. 여기서 먼저 GitHub Page가 뭔지 알고 가도록 하자. GitHub는 중요해… GitHub란 쉽게 설명하자면 개발자들이 사용하는 홈페이지인데 여기 여러 가지" />
+    <meta property="og:url" content="https://HAN-Sang-Ho.github.io/jekyll-basic2" />
+    <meta property="og:image" content="https://HAN-Sang-Ho.github.io/assets/built/images/jekyll-logo.png" />
+    <meta property="article:publisher" content="https://www.facebook.com/" />
+    <meta property="article:author" content="https://www.facebook.com/" />
+    <meta property="article:published_time" content="2020-03-08T05:20:00+09:00" />
+    <meta property="article:modified_time" content="2020-03-08T05:20:00+09:00" />
+    <meta property="article:tag" content="Jekyll" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jekyll - 나의 블로그를 수정해보자 & Publishing" />
+    <meta name="twitter:description" content="저번 포스팅에서는 여러가지 환경 구축과 블로그를 내장 웹서버를 통해 블로그를 내화면에 띄우는데 까지 해봤다. 이번 포스팅은 블로그를 내가 원하는 모양 수정하는 법과 GitHub Page에 내 블로그를 개설하는 방법에 대해서 다루도록 하겠다. 여기서 먼저 GitHub Page가 뭔지 알고 가도록 하자. GitHub는 중요해… GitHub란 쉽게 설명하자면 개발자들이 사용하는 홈페이지인데 여기 여러 가지" />
+    <meta name="twitter:url" content="https://HAN-Sang-Ho.github.io/" />
+    <meta name="twitter:image" content="https://HAN-Sang-Ho.github.io/assets/built/images/jekyll-logo.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="호노의 Technical Blog" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Jekyll" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "호노의 Technical Blog",
+        "logo": "https://HAN-Sang-Ho.github.io/"
+    },
+    "url": "https://HAN-Sang-Ho.github.io/jekyll-basic2",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://HAN-Sang-Ho.github.io/assets/built/images/jekyll-logo.png",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://HAN-Sang-Ho.github.io/jekyll-basic2"
+    },
+    "description": "저번 포스팅에서는 여러가지 환경 구축과 블로그를 내장 웹서버를 통해 블로그를 내화면에 띄우는데 까지 해봤다. 이번 포스팅은 블로그를 내가 원하는 모양 수정하는 법과 GitHub Page에 내 블로그를 개설하는 방법에 대해서 다루도록 하겠다. 여기서 먼저 GitHub Page가 뭔지 알고 가도록 하자. GitHub는 중요해… GitHub란 쉽게 설명하자면 개발자들이 사용하는 홈페이지인데 여기 여러 가지"
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="Jekyll - 나의 블로그를 수정해보자 & Publishing" href="/feed.xml" />
+
+
+</head>
+<body class="post-template">
+
+    <div class="site-wrapper">
+        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+        <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="https://HAN-Sang-Ho.github.io/">호노의 Technical Blog</a>
+            
+        
+        
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
+    <li class="nav-about" role="menuitem"><a href="/about/">About</a></li>
+    <li class="nav-jekyll" role="menuitem"><a href="/tag/jekyll/">Jekyll</a></li>
+    <li class="nav-python" role="menuitem"><a href="/tag/python/">Python</a></li>
+    <li class="nav-archive" role="menuitem">
+        <a href="/archive.html">All Posts</a>
+    </li>
+    <li class="nav-archive" role="menuitem">
+        <a href="/author_archive.html">Tag별 Posts</a>
+    </li>
+</ul>
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            
+            
+        </div>
+        
+            <a class="subscribe-button" href="#subscribe">Search</a>
+        
+    </div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full  tag-jekyll post tag-python ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime=" 8 March 2020"> 8 March 2020</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/jekyll/'>JEKYLL</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">Jekyll - 나의 블로그를 수정해보자 & Publishing</h1>
+            </header>
+            <!--
+            
+            <figure class="post-full-image" style="background-image: url(/assets/built/images/jekyll-logo.png)">
+            </figure>
+            
+            -->
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <p><i class="fa fa-list-alt"></i>저번 포스팅에서는  여러가지 환경 구축과 블로그를 내장 웹서버를 통해 블로그를 내화면에 띄우는데 까지 해봤다.</p>
+
+<hr />
+
+<p><i class="fa fa-tag"></i>이번 포스팅은 블로그를 내가 원하는 모양 수정하는 법과 <strong>GitHub Page</strong>에 내 블로그를 개설하는 방법에 대해서 다루도록 하겠다.</p>
+
+<p>여기서 먼저 <strong>GitHub Page</strong>가 뭔지 알고 가도록 하자.  <i class="fa fa-thumb-tack"></i> <strong>GitHub는 중요해…</strong></p>
+
+<p><img src="https://user-images.githubusercontent.com/79001968/110790844-de494500-82b4-11eb-9504-10493a923fe1.png" alt="GitHub-logo" style="zoom: 50%;" /></p>
+
+<p><strong>GitHub</strong>란 쉽게 설명하자면 개발자들이 사용하는 홈페이지인데 여기 여러 가지 기능들이 있다. 우리는 그중 우리 블로그 페이지를 만들어주는 기능과 수정을 용이하게 하려는 기능을 사용하려 한다.</p>
+
+<p>그러면 한 가지 의문이 들것이다. 페이지가 만들어졌는데 구지 왜 <strong>GitHub Page</strong>를 이용하는 거지?</p>
+
+<p>그 이유는 간단하다. 정말 나만 보기 위해 그리고 다른 컴퓨터가 아닌 내컴퓨터에서만 확인하려면 내장 웹서버를 이용해도 된다. 
+ 하지만 우리는 내가 아닌 그리고 내컴퓨터에서만 확인하는 게 아니라 <strong>URL</strong> 주소만 있다면 언제 어디서든 그 누구라도 24시간 페이지에 접속이 가능한 웹사이트를 만들고 싶을 거다. 즉, 쉽게 말해 우리 대신 페이지를 24시간 동안 활성화되고 접근할 수 있도록 <strong>GitHub</strong>에서 관리해주는 것이다.</p>
+
+<p>물론 다른 사이트들도 많지만, 그중 개발자들이 <strong>GitHub</strong>를 가장 선호하는 이유는 무료! 두 번째 이 외에도 개발에 필요한 많은 기능이 있기 때문이다.
+이 기능들은 앞으로 차차 알아가고 이번 포스팅은  Page를 개설하는 곳에 포커스를 두도록 하자.</p>
+
+<hr />
+
+<p><i class="fa fa-tag"></i>첫번째 포스팅에서도 언급했지만, 네이버 블로그나 다음 티스토리 같은 경우는 수정하기는 쉬워도 자기 마음대로 기능을 추가하고 배치하는 것에 대한 한계가 있다.</p>
+
+<p><strong>Jasper2</strong> 를 이용한 블로그는 자신이 원하도록 수정을 할 수 있는데… 이게… 생각보다 많이 어렵다… 차근차근히 해보도록 하자…</p>
+
+<p>우선 압축 해제한 폴더 <strong>C:/blogmaker</strong> 이 폴더가 <strong>Jekyll Source Folder</strong>가 된다.
+폴더 안의 <strong>_post</strong>라는 파일이 우리가 글을 직접 작성하는 곳이다. (내장 웹서버)</p>
+
+<p>이 폴더에 글을 <strong>markdown</strong> 형식으로 작성을 하고, <strong>bundle exec Jekyll serve</strong> 명령을 이용하여  <strong>build</strong> 시키면 저장된 글에 컴파일이 진행되고 결과물이 <strong>destination</strong> 폴더에 생성된다.</p>
+
+<p>이후에 <strong>GitHub Page</strong>에 올려 실제 사용하는 블로그가 이 <strong>destination</strong> 폴더 안에 있는 내용이다. 따라서 <strong>Git</strong>을 이용하여 변환된 결과물(destination 폴더 안의 내용)을 <strong>GitHub Page</strong>와 연동되는 <strong>GitHub Repository</strong>에 <strong>push</strong> 해 주어야 한다.</p>
+
+<p>처음에 이 내용이 어려울 수도 있는데…  쉽게 설명하자면 수학 문제를 풀 때 연습장에다가 문제를 풀다가 정답이 확실해지면 시험지에 풀이와 답을 적듯이 우리도 내장 웹서버에서 파일들을 이것저것 수정하고 추가하다가 수정할 내용이 확정이 되었을 때 최종적으로 <strong>GitHub</strong>에 올리는 것이다. (이 과정을 commit하고  push준다 라고 생각하면 될 것 같다.)</p>
+
+<p>그리고 이때 사용하는 <strong>IDE</strong>는 <strong>WebStorm</strong>을 이용하도록 하겠다.</p>
+
+<hr />
+
+<p><strong>C:/blogmaker **폴더안에서 **_config.yml</strong>을 찾아 해당내용을 자신에 맞게 수정해서 사용해야 한다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">#</span> <span class="nx">Jekyll</span> <span class="nx">configuration</span>
+<span class="nx">markdown</span><span class="p">:</span> <span class="nx">kramdown</span>
+<span class="err">#</span> <span class="nx">kramdown</span> <span class="p">:</span> <span class="nx">markdown</span><span class="err">의</span> <span class="err">개조판</span><span class="p">.</span>
+<span class="err">#</span> <span class="nx">markdown</span><span class="err">에서</span> <span class="err">불편한</span> <span class="err">사항을</span> <span class="err">개선한</span> <span class="err">형태</span><span class="p">.</span>
+
+<span class="err">#</span> <span class="nx">MyData</span>
+<span class="nx">owner</span><span class="p">:</span>
+  <span class="nx">name</span><span class="p">:</span>           <span class="nx">SangHo</span> <span class="nx">Han</span>
+  <span class="nx">avatar</span><span class="p">:</span>         <span class="nx">photo</span><span class="p">.</span><span class="nx">jpg</span>
+  <span class="nx">bio</span><span class="p">:</span>            <span class="s2">"Major : Mathematics Education"</span>
+  <span class="nx">email</span><span class="p">:</span>          <span class="nx">han_sh96</span><span class="p">@</span><span class="nd">naver</span><span class="p">.</span><span class="nx">com</span>
+  <span class="err">#</span> <span class="nx">Social</span> <span class="nx">networking</span> <span class="nx">links</span> <span class="nx">used</span> <span class="k">in</span> <span class="nx">footer</span><span class="p">.</span> <span class="nx">Update</span> <span class="nx">and</span> <span class="nx">remove</span> <span class="k">as</span> <span class="nx">you</span> <span class="nx">like</span><span class="p">.</span>
+  <span class="nx">twitter</span><span class="p">:</span>
+  <span class="nx">facebook</span><span class="p">:</span>
+  <span class="nx">github</span><span class="p">:</span>
+  <span class="nx">stackexchange</span><span class="p">:</span>
+  <span class="nx">linkedin</span><span class="p">:</span>
+  <span class="nx">instagram</span><span class="p">:</span>      <span class="nx">han_sh96</span>
+  <span class="nx">flickr</span><span class="p">:</span>
+  <span class="nx">tumblr</span><span class="p">:</span>
+  <span class="err">#</span> <span class="nx">google</span> <span class="nx">plus</span> <span class="nx">id</span><span class="p">,</span> <span class="nx">include</span> <span class="nx">the</span> <span class="s1">'+'</span><span class="p">,</span> <span class="nx">eg</span> <span class="o">+</span><span class="nx">mmistakes</span>
+  <span class="nx">google_plus</span><span class="p">:</span>
+
+<span class="nx">highlighter</span><span class="p">:</span> <span class="nx">rouge</span>
+<span class="err">#</span> <span class="nx">text</span> <span class="nx">highlighter</span><span class="err">로</span> <span class="nx">rouge</span><span class="err">이용</span>
+<span class="err">#</span> <span class="mf">2016.02</span><span class="err">월</span> <span class="err">이후로</span> <span class="nx">syntax</span> <span class="nx">highlighter</span><span class="err">는</span> <span class="nx">rouge</span><span class="err">만</span> <span class="err">지원</span><span class="p">.</span>
+<span class="err">#</span> <span class="nx">Pygments</span> <span class="err">사용불가</span><span class="p">.</span>
+<span class="err">#</span> <span class="err">루즈</span> <span class="err">기술</span> <span class="err">블로그를</span> <span class="err">사용할때</span> <span class="err">적합</span>
+
+<span class="nx">paginate</span><span class="p">:</span> <span class="mi">20</span>
+<span class="err">#</span> <span class="err">작성한</span> <span class="err">모든</span> <span class="nx">post</span><span class="err">를</span> <span class="err">하나의</span> <span class="err">페이지에</span> <span class="err">열거할</span> <span class="err">수</span> <span class="err">없으니</span>
+<span class="err">#</span> <span class="nx">pagination</span><span class="err">이</span> <span class="err">필요하고</span> <span class="err">몇개의</span> <span class="nx">post</span><span class="err">를</span> <span class="err">하나의</span> <span class="nx">page</span><span class="err">에서</span>
+<span class="err">#</span> <span class="err">보여줄</span> <span class="err">건지를</span> <span class="err">설정</span><span class="p">.</span>
+
+<span class="nx">language</span><span class="p">:</span> <span class="s1">'en-uk'</span>
+<span class="err">#</span> <span class="err">언어</span> <span class="err">설정</span>
+
+<span class="nx">url</span><span class="p">:</span> <span class="nx">https</span><span class="p">:</span><span class="c1">//HAN-Sang-Ho.github.io</span>
+<span class="err">#</span> <span class="nx">Google</span> <span class="nx">Search</span> <span class="nx">Console</span><span class="err">에서</span> <span class="err">사용하는</span> <span class="nx">sitemap</span><span class="p">.</span><span class="nx">xml</span> <span class="err">생성시</span>
+<span class="err">#</span> <span class="err">이</span> <span class="nx">url</span> <span class="nx">key</span><span class="err">값이</span> <span class="err">존재하지</span> <span class="err">않으면</span> <span class="nx">sitemap</span><span class="p">.</span><span class="nx">xml</span><span class="err">이</span>
+<span class="err">#</span> <span class="err">정상적으로</span> <span class="err">생성되지</span> <span class="err">않는다</span><span class="p">.</span>
+<span class="err">#</span> <span class="err">또한</span> <span class="nx">disqus</span><span class="p">(</span><span class="err">댓글시스템</span><span class="p">)</span><span class="err">를</span> <span class="err">이용하기</span> <span class="err">위해서도</span> <span class="err">필요</span><span class="p">.</span>
+<span class="err">#</span> <span class="err">자신의</span> <span class="nx">github</span> <span class="nx">page</span> <span class="nx">url</span><span class="err">을</span> <span class="err">입력</span>
+<span class="err">#</span> <span class="p">(</span> <span class="nx">https</span><span class="p">:</span><span class="c1">//your_github_id.github.io 형식 )</span>
+
+<span class="nx">baseurl</span><span class="p">:</span> <span class="o">/</span>
+
+<span class="err">#</span> <span class="nx">Website</span> <span class="nx">info</span>
+<span class="nx">title</span><span class="p">:</span> <span class="err">호노의</span> <span class="nx">Technical</span> <span class="nx">Blog</span>
+<span class="err">#</span> <span class="err">자신의</span> <span class="nx">blog</span> <span class="nx">title</span><span class="p">.</span>
+
+<span class="nx">description</span><span class="p">:</span> <span class="err">코딩</span> <span class="err">공부장</span>
+<span class="err">#</span> <span class="nx">blog</span> <span class="nx">home</span><span class="err">에</span> <span class="err">표시될</span> <span class="nx">blog</span><span class="err">에</span> <span class="err">대한</span> <span class="err">전반적인</span> <span class="err">설명</span><span class="p">.</span>
+
+<span class="nx">cover</span><span class="p">:</span> <span class="nx">assets</span><span class="o">/</span><span class="nx">built</span><span class="o">/</span><span class="nx">images</span><span class="o">/</span><span class="nx">blog</span><span class="o">-</span><span class="nx">cover1</span><span class="p">.</span><span class="nx">png</span>
+<span class="err">#</span> <span class="nx">blog</span> <span class="nx">home</span><span class="err">에</span> <span class="err">표시될</span> <span class="nx">blog</span> <span class="nx">cover</span> <span class="nx">image</span><span class="p">.</span>
+<span class="err">#상당</span> <span class="err">백그라운드</span> <span class="err">쪽</span>
+
+<span class="nx">logo</span><span class="p">:</span>
+<span class="nx">logo_dark</span><span class="p">:</span>
+
+<span class="nx">favicon</span><span class="p">:</span> <span class="nx">assets</span><span class="o">/</span><span class="nx">built</span><span class="o">/</span><span class="nx">images</span><span class="o">/</span><span class="nx">favicon</span><span class="p">.</span><span class="nx">jpg</span>
+<span class="err">#</span> <span class="err">검색창</span> <span class="err">위</span> <span class="err">상당</span> <span class="err">표시줄에</span> <span class="err">나타나는</span> <span class="err">작은</span> <span class="err">이미지</span> <span class="p">(</span><span class="err">글자</span> <span class="err">옆</span><span class="p">)</span>
+
+<span class="nx">production_url</span><span class="p">:</span> <span class="nx">https</span><span class="p">:</span><span class="c1">//HAN-Sang-Ho.github.io/</span>
+<span class="err">#</span> <span class="err">최종적으로</span> <span class="nx">blog</span><span class="err">가</span> <span class="err">운영될</span> <span class="nx">url</span>
+
+<span class="nx">source_url</span><span class="p">:</span> <span class="nx">https</span><span class="p">:</span><span class="c1">//github.com/HAN-Sang-Ho/GitHubPageMaker/</span>
+<span class="err">#</span> <span class="nx">blogmaker</span><span class="p">(</span><span class="nx">jekyll</span> <span class="nx">source</span> <span class="nx">folder</span><span class="p">)</span><span class="err">에</span> <span class="err">대한</span> <span class="nx">github</span> <span class="nx">repository</span>
+
+<span class="err">#</span> <span class="nx">Social</span> <span class="nx">info</span>
+<span class="nx">navigation</span><span class="p">:</span> <span class="nx">True</span>
+<span class="err">#</span> <span class="nx">Navigation</span> <span class="nx">bar</span> <span class="nx">link</span><span class="err">를</span> <span class="err">보여줄건지</span> <span class="err">여부</span>
+
+<span class="nx">subscribers</span><span class="p">:</span> <span class="nx">True</span>
+<span class="err">#</span> <span class="nx">subscriber</span> <span class="err">기능을</span> <span class="err">사용할건지의</span> <span class="err">여부</span>
+<span class="err">#</span> <span class="err">저는</span> <span class="err">약간의</span> <span class="err">수정을</span> <span class="err">통해</span> <span class="nx">subscriber</span> <span class="err">기능대신</span>
+<span class="err">#</span> <span class="nx">lunr</span><span class="p">.</span><span class="nx">js</span><span class="err">를</span> <span class="err">이용한</span> <span class="err">검색</span> <span class="err">기능으로</span> <span class="err">대체</span> <span class="err">사용했습니다</span><span class="p">.</span>
+<span class="err">#</span> <span class="err">검색기능으로</span> <span class="err">대체하기</span> <span class="err">위해서</span>
+<span class="err">#</span> <span class="s2">`_includes/subscribe-form.html`</span> <span class="err">파일의</span> <span class="err">수정이</span> <span class="err">필요합니다</span><span class="p">.</span>
+
+<span class="nx">twitter</span><span class="p">:</span>
+<span class="nx">facebook</span><span class="p">:</span>
+<span class="err">#</span> <span class="err">만약</span> <span class="nx">twitter</span><span class="err">와</span> <span class="nx">facebook</span><span class="err">을</span> <span class="err">이용하면</span> <span class="nx">username</span><span class="err">을</span> <span class="err">입력</span>
+
+<span class="err">#</span> <span class="nx">Disqus</span>
+<span class="nx">disqus</span><span class="p">:</span> <span class="nx">True</span>
+<span class="nx">disqus_shortname</span><span class="p">:</span> <span class="nx">xxxxxxxxxx</span>
+<span class="err">#</span> <span class="nx">disqus</span><span class="err">는</span> <span class="err">온라인</span> <span class="err">댓글</span> <span class="err">시스템</span><span class="p">.</span> <span class="err">댓글</span> <span class="err">기능을</span> <span class="err">사용하기</span> <span class="err">위해</span>
+<span class="err">#</span> <span class="nx">disqus</span><span class="err">를</span> <span class="err">이용할</span> <span class="err">것인지</span> <span class="err">여부와</span> <span class="err">만약</span> <span class="err">사용하면</span>
+<span class="err">#</span> <span class="nx">disqus</span> <span class="nx">shortname</span><span class="err">을</span> <span class="err">입력</span> <span class="p">(</span> <span class="nx">disqus</span> <span class="nx">username</span><span class="err">이</span> <span class="err">아님</span> <span class="p">)</span>
+
+
+<span class="err">#</span> <span class="nx">Google</span> <span class="nx">Analytics</span>
+<span class="nx">google_analytics</span><span class="p">:</span> <span class="nx">xxxxxxxxxx</span> <span class="err">#</span> <span class="nx">replace</span> <span class="kd">with</span> <span class="nx">your</span> <span class="nx">GA</span> <span class="nx">tracking</span> <span class="nx">identifier</span>
+<span class="err">#</span> <span class="nx">Google</span> <span class="nx">Analytics</span><span class="err">을</span> <span class="err">사용할</span> <span class="err">경우</span> <span class="nx">GA</span> <span class="nx">tracking</span> <span class="nx">identifier</span><span class="err">를</span> <span class="err">입력</span>
+
+<span class="err">#</span> <span class="nx">Permalinks</span>
+<span class="nx">permalink</span><span class="p">:</span> <span class="o">/</span><span class="p">:</span><span class="nx">title</span>
+<span class="err">#</span> <span class="nx">permalink</span><span class="p">:</span> <span class="o">/</span><span class="nx">author</span><span class="o">/</span><span class="p">:</span><span class="nx">author</span>
+<span class="err">#</span> <span class="nx">permalink</span><span class="p">:</span> <span class="o">/</span><span class="nx">tag</span><span class="o">/</span><span class="p">:</span><span class="nx">title</span>
+<span class="err">#</span> <span class="err">각각의</span> <span class="nx">post</span><span class="err">에</span> <span class="err">고정주소를</span> <span class="err">어떤</span> <span class="err">방식으로</span> <span class="err">할당할</span> <span class="err">것인지를</span> <span class="err">결정</span>
+<span class="err">#</span> <span class="err">이</span> <span class="err">값을</span> <span class="err">바꾸면</span> <span class="err">작성한</span> <span class="err">포스트의</span> <span class="err">저장위치나</span> <span class="err">파일이름이</span> <span class="err">변경된다</span><span class="p">.</span>
+
+<span class="err">#</span> <span class="nx">gems</span> <span class="nx">and</span> <span class="nx">other</span> <span class="nx">configs</span>
+<span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span><span class="nx">jekyll</span><span class="o">-</span><span class="nx">paginate</span><span class="p">,</span> <span class="nx">jekyll</span><span class="o">-</span><span class="nx">feed</span><span class="p">,</span> <span class="nx">jekyll</span><span class="o">-</span><span class="nx">gist</span><span class="p">]</span>
+
+<span class="nx">feed</span><span class="p">:</span>
+  <span class="nx">path</span><span class="p">:</span> <span class="nx">feed</span><span class="p">.</span><span class="nx">xml</span>
+
+<span class="err">#</span> <span class="nx">Travis</span><span class="o">-</span><span class="nx">CI</span> <span class="err">설정입니다</span><span class="p">.</span>
+<span class="nx">safe</span><span class="p">:</span> <span class="nx">False</span>
+<span class="nx">lsi</span><span class="p">:</span> <span class="nx">False</span>
+
+<span class="nx">username</span><span class="p">:</span> <span class="nx">Han</span><span class="o">-</span><span class="nx">Sang</span><span class="o">-</span><span class="nx">Ho</span>
+<span class="nx">repo</span><span class="p">:</span> <span class="nx">GitHubPageMaker</span>
+<span class="err">#</span> <span class="nx">username</span> <span class="p">:</span> <span class="nx">travis</span><span class="o">-</span><span class="nx">ci</span><span class="err">와</span> <span class="err">연동하는</span> <span class="nx">github</span><span class="err">의</span> <span class="nx">username</span>
+<span class="err">#</span> <span class="nx">repo</span><span class="p">:</span> <span class="nx">travis</span><span class="o">-</span><span class="nx">ci</span><span class="err">와</span> <span class="err">연동하는</span> <span class="nx">github</span><span class="err">의</span> <span class="nx">repository</span><span class="err">이름</span>
+<span class="err">#</span> <span class="nx">https</span><span class="p">:</span><span class="c1">//github.com/&lt;username&gt;/&lt;repository&gt;</span>
+
+<span class="nx">branch</span><span class="p">:</span> <span class="nx">master</span>
+<span class="err">#</span> <span class="err">사용할</span> <span class="nx">branch</span><span class="err">명</span>
+
+<span class="nx">relative_source</span><span class="p">:</span>
+
+<span class="nx">destination</span><span class="p">:</span> <span class="p">..</span><span class="o">/</span><span class="p">[</span><span class="nx">GitHubPage</span><span class="p">]</span><span class="o">/</span>
+<span class="err">#</span> <span class="nx">compile</span><span class="err">된</span> <span class="err">결과가</span> <span class="err">생성되는</span> <span class="err">폴더</span>
+<span class="err">#</span> <span class="err">이</span> <span class="err">폴더안의</span> <span class="err">내용이</span> <span class="err">우리가</span> <span class="err">운영하는</span> <span class="err">블로그</span> <span class="err">내용이</span> <span class="err">컴파일되서</span> <span class="err">들어간다</span><span class="p">.</span>
+<span class="err">#</span> <span class="err">이</span> <span class="err">폴더안의</span> <span class="err">내용을</span> <span class="nx">github</span> <span class="nx">repository</span><span class="p">(</span><span class="nx">https</span><span class="p">:</span><span class="c1">//username.github.io)에 push</span>
+<span class="err">#</span> <span class="err">만약</span> <span class="nx">Travis</span><span class="o">-</span><span class="nx">CI</span><span class="err">를</span> <span class="err">이용할</span> <span class="err">예정이면</span> <span class="err">이</span> <span class="err">부분을</span> <span class="nx">git</span> <span class="nx">submodule</span><span class="err">로</span>
+<span class="err">#</span> <span class="nx">github</span> <span class="nx">repository</span><span class="p">(</span><span class="nx">https</span><span class="p">:</span><span class="c1">//username.github.io)에 연결해야 한다.</span>
+
+
+<span class="err">#</span> <span class="nx">exclude</span><span class="err">는</span> <span class="nx">Jekyll</span><span class="err">컴파일</span> <span class="err">시</span> <span class="nx">destination</span><span class="err">에</span> <span class="err">포함될</span> <span class="err">필요가</span>
+<span class="err">#</span> <span class="err">없는것들을</span> <span class="err">명시한다</span><span class="p">.</span> <span class="p">(</span><span class="nx">node_modules</span><span class="err">와</span> <span class="err">필요없는</span> <span class="err">것들은</span> <span class="err">제외</span><span class="p">)</span>
+<span class="nx">exclude</span><span class="p">:</span>
+  <span class="o">-</span> <span class="nx">README</span><span class="p">.</span><span class="nx">md</span>
+  <span class="o">-</span> <span class="nx">Rakefile</span>
+  <span class="o">-</span> <span class="nx">Gemfile</span>
+  <span class="o">-</span> <span class="nx">Gemfile</span><span class="p">.</span><span class="nx">lock</span>
+  <span class="o">-</span> <span class="nx">changelog</span><span class="p">.</span><span class="nx">md</span>
+  <span class="o">-</span> <span class="s2">"*.Rmd"</span>
+  <span class="o">-</span> <span class="nx">vendor</span>
+  <span class="o">-</span> <span class="p">.</span><span class="nx">travis</span><span class="p">.</span><span class="nx">yml</span>
+  <span class="o">-</span> <span class="nx">node_modules</span>
+  <span class="o">-</span> <span class="nx">assets</span><span class="o">/</span><span class="nx">css</span>
+  <span class="o">-</span> <span class="nx">assets</span><span class="o">/</span><span class="nx">images</span>
+  <span class="o">-</span> <span class="nx">_posts</span><span class="o">/</span><span class="nx">angular</span>
+  <span class="o">-</span> <span class="nx">_posts</span><span class="o">/</span><span class="nx">et</span><span class="o">-</span><span class="nx">cetera</span>
+<span class="err">#</span>  <span class="o">-</span> <span class="nx">_posts</span><span class="o">/</span><span class="nx">python</span>
+  <span class="o">-</span> <span class="nx">_posts</span><span class="o">/</span><span class="nx">typescript</span>
+  <span class="o">-</span> <span class="nx">_posts</span><span class="o">/</span><span class="nx">iot</span>
+  <span class="o">-</span> <span class="nx">_posts</span><span class="o">/</span><span class="nx">r</span>
+  <span class="o">-</span> <span class="nx">_posts</span><span class="o">/</span><span class="nx">economy</span>
+</code></pre></div></div>
+
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+           <!--
+            
+                <section class="subscribe-form">
+                    <h3 class="subscribe-form-title">Subscribe to 호노의 Technical Blog</h3>
+                    <p>Get the latest posts delivered right to your inbox</p>
+                    <span id="searchform" method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  />
+    <input class="location" type="hidden" name="location"  />
+    <input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" onkeyup="myFunc()"
+               id="searchtext" type="text" name="searchtext"
+               placeholder="Search..." />
+    </div>
+    <script type="text/javascript">
+        function myFunc() {
+            if(event.keyCode == 13) {
+                var url = encodeURIComponent($("#searchtext").val());
+                location.href = "/search.html?query=" + url;
+            }
+        }
+    </script>
+</span>
+                </section>
+            
+            -->
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                        <section class="author-card">
+                            
+                                <img class="author-profile-image" src="/assets/built/images/author-logo.jpg" alt="Hono" />
+                            
+                            <section class="author-card-content">
+                                <h4 class="author-card-name"><a href="/author/Hono">Hono</a></h4>
+                                
+                                    <p><a href="https://www.youtube.com/channel/UCKdVddwVAsN1GkOU_cABjqw">개발자 호노 Hono, (비전공자의 개발자 도전기)</a></p>
+                                
+                            </section>
+                        </section>
+                        <div class="post-full-footer-right">
+                            <a class="author-card-button" href="/author/Hono">Read More</a>
+                        </div>
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = 'https://HAN-Sang-Ho.github.io/jekyll-basic2';
+                            this.page.identifier = '/jekyll-basic2';
+                            this.page.title = 'Jekyll - 나의 블로그를 수정해보자 & Publishing';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://xxxxxxxxxx.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/assets/built/images/blog-cover1.png)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; 호노의 Technical Blog &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/jekyll/">Jekyll</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/jekyll-basic">Jekyll - 나의 블로그를 만들어보자</a></li>
+                                        
+                                    
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/jekyll/">
+                                
+                                    See all 1 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/python-calculator">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/python-logo.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/python-calculator">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Python</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Python - 계산기를 만들어보자</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/built/images/author-logo.jpg" alt="Hono" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/Hono/">Hono</a>
+                        </span>
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/jekyll-basic">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/jekyll-logo.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/jekyll-basic">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Jekyll</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Jekyll - 나의 블로그를 만들어보자</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/built/images/author-logo.jpg" alt="Hono" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/Hono/">Hono</a>
+                        </span>
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="https://HAN-Sang-Ho.github.io/">
+            
+            <span>호노의 Technical Blog</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Jekyll - 나의 블로그를 수정해보자 & Publishing</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Jekyll+-+%EB%82%98%EC%9D%98+%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC+%EC%88%98%EC%A0%95%ED%95%B4%EB%B3%B4%EC%9E%90+%26+Publishing&amp;url=https://HAN-Sang-Ho.github.io/jekyll-basic2"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://HAN-Sang-Ho.github.io/jekyll-basic2"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+        <!-- Previous/next page links - displayed on every page -->
+        
+
+        <!-- The footer at the very bottom of the screen -->
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://HAN-Sang-Ho.github.io/">호노의 Technical Blog</a> &copy; 2021</section>
+                <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
+                    <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
+                <nav class="site-footer-nav">
+                    <a href="/">Latest Posts</a>
+                    
+                    
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+    <div id="subscribe" class="subscribe-overlay">
+        <a class="subscribe-overlay-close" href="#"></a>
+        <div class="subscribe-overlay-content">
+            
+            <h1 class="subscribe-overlay-title">Search 호노의 Technical Blog</h1>
+            <p class="subscribe-overlay-description">
+                lunr.js를 이용한 posts 검색 </p>
+            <span id="searchform" method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  />
+    <input class="location" type="hidden" name="location"  />
+    <input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" onkeyup="myFunc()"
+               id="searchtext" type="text" name="searchtext"
+               placeholder="Search..." />
+    </div>
+    <script type="text/javascript">
+        function myFunc() {
+            if(event.keyCode == 13) {
+                var url = encodeURIComponent($("#searchtext").val());
+                location.href = "/search.html?query=" + url;
+            }
+        }
+    </script>
+</span>
+        </div>
+    </div>
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>$(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });</script>
+
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
+
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+
+    <!-- Add Google Analytics  -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-191556191-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-191556191-1');
+</script>
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+        <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+    
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+
+</body>
+</html>
