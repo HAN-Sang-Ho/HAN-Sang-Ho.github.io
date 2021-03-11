@@ -46,9 +46,24 @@
     
       
       <item>
+        <title>Jekyll - 나의 블로그를 수정해보자 &amp; Publishing</title>
+        
+          <description>&lt;p&gt;&lt;i class=&quot;fa fa-list-alt&quot;&gt;&lt;/i&gt;저번 포스팅에서는  여러가지 환경 구축과 블로그를 내장 웹서버를 통해 블로그를 내화면에 띄우는데 까지 해봤다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 08 Mar 2020 05:20:00 +0900</pubDate>
+        <link>
+        https://HAN-Sang-Ho.github.io/jekyll-basic2</link>
+        <guid isPermaLink="true">https://HAN-Sang-Ho.github.io/jekyll-basic2</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Jekyll - 나의 블로그를 만들어보자</title>
         
-          <description>&lt;p&gt;&lt;strong&gt;Jekyll&lt;/strong&gt;과 &lt;strong&gt;Github&lt;/strong&gt;를 이용해서 자신만의 블로그를 만들어보자.&lt;/p&gt;
+          <description>&lt;p&gt;&lt;i class=&quot;fa fa-list-alt&quot;&gt;&lt;/i&gt; &lt;strong&gt;Jekyll&lt;/strong&gt;과 &lt;strong&gt;Github&lt;/strong&gt;를 이용해서 자신만의 블로그를 만들어보자.&lt;/p&gt;
 
 </description>
         

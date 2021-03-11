@@ -193,9 +193,9 @@ into the {body} of the default.hbs template -->
             -->
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p><strong>Jekyll</strong>과 <strong>Github</strong>를 이용해서 자신만의 블로그를 만들어보자.</p>
+                    <p><i class="fa fa-list-alt"></i> <strong>Jekyll</strong>과 <strong>Github</strong>를 이용해서 자신만의 블로그를 만들어보자.</p>
 
-<p>우선 개발환경으로는 <strong>Ruby</strong>를 사용할 것이고 에디터는  Window 10으로 작업</p>
+<p><i class="fa fa-cog"></i>  우선 개발환경으로는 <strong>Ruby</strong>를 사용할 것이고 에디터는  Window 10으로 작업</p>
 
 <p>네이버 블로그나 다음의 티스토리 같은 블로그를 사용하지 않는 이유는 버튼 몇 개만 누르면 바로바로 완성된 블로그를 만들어 주겠지만 커스텀마이징이 많이 제한된다는 점과 코드들을 올렸을 때 가독성이 떨어지기 때문이다. <br />
 (그리고… 나름 개발자를 꿈꾸는데 블로그 하나 정도는 만들어야 하지 않겠나,,,? 하하…)</p>
@@ -206,7 +206,8 @@ into the {body} of the default.hbs template -->
 
 <p><img src="https://user-images.githubusercontent.com/79001968/110790606-94605f00-82b4-11eb-9aa0-7263869deb16.png" alt="Ruby logo" style="zoom: 80%;" /></p>
 
-<p><strong>Jekyll</strong>은 간단하게 말해서 테마 <strong>Github는</strong> 저장소 <strong>Ruby는</strong> 개발언어(툴)이라고 생각하면 편하다. (자세하게는 뒤에 가서)</p>
+<p><i class="fa fa-tag"></i>
+<strong>Jekyll</strong>은 간단하게 말해서 테마 <strong>Github는</strong> 저장소 <strong>Ruby는</strong> 개발언어(툴)이라고 생각하면 편하다. (자세하게는 뒤에 가서)</p>
 
 <p>우리는 <strong>Jekyll</strong>의 테마 중 <strong>Ghost</strong>라는 테마를 사용할 것이다.</p>
 
@@ -216,7 +217,7 @@ into the {body} of the default.hbs template -->
 
 <hr />
 
-<p>자 그럼 이제 시작해야 할 일은 <strong>Ruby</strong>를 설치해야 한다.</p>
+<p><i class="fa fa-tag"></i>자 그럼 이제 시작해야 할 일은 <strong>Ruby</strong>를 설치해야 한다.</p>
 
 <p><strong>Ruby</strong>는 <a href="https://rubyinstaller.org/downloads/">Ruby-download</a> 이곳에서 다운받으면 된다. 내가 이 페이지에서 사용할 버전은 <strong>2.6.6-2</strong> 이다.  (<em>다른 버전으로 사용 시 오류 가능성</em>)</p>
 
@@ -229,7 +230,7 @@ into the {body} of the default.hbs template -->
 
 <hr />
 
-<p>bundler를 설치하였다면 이제 Theme를 설치하자. <a href="http://jekyllthemes.org/themes/jasper2/">Jekylltheme-Jasper2</a>
+<p><i class="fa fa-tag"></i>bundler를 설치하였다면 이제 Theme를 설치하자. <a href="http://jekyllthemes.org/themes/jasper2/">Jekylltheme-Jasper2</a>
 경로를 통하여 압축 폴더를 다운받은 뒤 저장하자.</p>
 
 <p>여기서 주의해야 할 점 폴더 내에 공백이 포함되어 있으면 나중에 css빌드할 때 문제가 발생하니 <em>C:/blogmaker</em> 처럼 폴더는 소문자로 공백없이 생성하자.</p>
@@ -260,7 +261,9 @@ into the {body} of the default.hbs template -->
 
 <hr />
 
-<p>혹시 누군가가 나의 Blog를 보고 코딩을 배운다. 혹은 블로그를 만든 다라고 해서 이 글을 본다면…</p>
+<h5><i class="fa fa-pencil"></i></h5>
+
+<p>혹시 누군가가 나의 Blog를 보고 코딩을 배운다. 혹은 블로그를 만든다라고 해서 이 글을 본다면…</p>
 
 <p>이 글을 봤을 때 50% 이상이 이해가 안 되거나 오류가 나거나 또는 단어 자체가 생소해서 등등의 많은 힘듦이 있을 거다.</p>
 
@@ -360,6 +363,51 @@ into the {body} of the default.hbs template -->
                 
                 
                 
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/assets/built/images/blog-cover1.png)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; 호노의 Technical Blog &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/jekyll/">Jekyll</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/jekyll-basic2">Jekyll - 나의 블로그를 수정해보자 & Publishing</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/jekyll/">
+                                
+                                    See all 1 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
             
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
@@ -368,22 +416,22 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/python-calculator">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/python-logo.png)"></div>
+            <a class="post-card-image-link" href="/jekyll-basic2">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/jekyll-logo.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/python-calculator">
+            <a class="post-card-content-link" href="/jekyll-basic2">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Python</span>
+                                <span class="post-card-tags">Jekyll</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Python - 계산기를 만들어보자</h2>
+                    <h2 class="post-card-title">Jekyll - 나의 블로그를 수정해보자 & Publishing</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
