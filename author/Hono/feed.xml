@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://han-sang-ho.github.io/author/Hono/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://han-sang-ho.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-03-11T23:58:58+09:00</updated>
+  <updated>2021-03-12T00:24:32+09:00</updated>
   <id>https://han-sang-ho.github.io/author/Hono/feed.xml</id>
 
   
@@ -184,9 +184,19 @@
 
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/79001968/110806143-1d7f9200-82c5-11eb-8eb0-8b30b5ecabe5.png&quot; alt=&quot;browser-view&quot; style=&quot;zoom:67%;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;이러한 내장 웹서버가 실행되는 것을 볼 수 있다. 그러면 자신만의 페이지가 생성이 된 것이다.&lt;/p&gt;
+&lt;p&gt;이러한 내장 웹서버가 실행되는 것을 볼 수 있다. 그러면 자신만의 페이지가 생성된 것이다.&lt;/p&gt;
 
-&lt;p&gt;우선 페이지를 만들었으니 반은 성공이다. 다음 포스팅부터는 어떻게 자신에게 맞게 수정을 하고 서버를 구축하는지 알아보도록 하자.&lt;/p&gt;</content>
+&lt;p&gt;우선 페이지를 만들었으니 반은 성공이다. 다음 포스팅부터는 어떻게 자신에게 맞게 수정을 하고 서버를 구축하는지 알아보도록 하자.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;혹시 누군가가 나의 Blog를 보고 코딩을 배운다. 혹은 블로그를 만든 다라고 해서 이 글을 본다면…&lt;/p&gt;
+
+&lt;p&gt;이 글을 봤을 때 50% 이상이 이해가 안 되거나 오류가 나거나 또는 단어 자체가 생소해서 등등의 많은 힘듦이 있을 거다.&lt;/p&gt;
+
+&lt;p&gt;나도 그랬다. 비전공자이고 그렇다고 학원이나 부트캠프에서 배우지 않아서 정말 아무것도 모르는 상태에서 시작했다. 모르는 것이 나오면 계속 유튜브 찾아보고, 구글링하고, 책을 읽었다. 그러다 보니 하나씩 알아듣는 내용이 생기고 재미가 붙기 시작했으니 포기하지 말고 힘내기를 바란다.&lt;/p&gt;
+
+&lt;p&gt;이 포스팅 내용 또한 나도 유튜브와 블로그에 포스팅한 내용을 공부하고 복습하려고 내가 다시  봤을때  조금 더 쉽게 수정한 내용이다.&lt;/p&gt;</content>
 
       
       
