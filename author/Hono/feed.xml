@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://han-sang-ho.github.io/author/Hono/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://han-sang-ho.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-03-12T18:54:39+09:00</updated>
+  <updated>2021-03-13T15:43:32+09:00</updated>
   <id>https://han-sang-ho.github.io/author/Hono/feed.xml</id>
 
   
@@ -49,7 +49,7 @@
 
 &lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;란 쉽게 설명하자면 개발자들이 사용하는 홈페이지인데 여기 여러 가지 기능들이 있다. 우리는 그중 우리 블로그 페이지를 만들어주는 기능과 수정을 용이하게 하려는 기능을 사용하려 한다.&lt;/p&gt;
 
-&lt;p&gt;그러면 한 가지 의문이 들것이다. 페이지가 만들어졌는데 구지 왜 &lt;strong&gt;GitHub Page&lt;/strong&gt;를 이용하는 거지?&lt;/p&gt;
+&lt;p&gt;그러면 한 가지 의문이 들것이다. 페이지가 만들어졌는데 굳이 왜 &lt;strong&gt;GitHub Page&lt;/strong&gt;를 이용하는 거지?&lt;/p&gt;
 
 &lt;p&gt;그 이유는 간단하다. 정말 나만 보기 위해 그리고 다른 컴퓨터가 아닌 내컴퓨터에서만 확인하려면 내장 웹서버를 이용해도 된다. 
  하지만 우리는 내가 아닌 그리고 내컴퓨터에서만 확인하는 게 아니라 &lt;strong&gt;URL&lt;/strong&gt; 주소만 있다면 언제 어디서든 그 누구라도 24시간 페이지에 접속이 가능한 웹사이트를 만들고 싶을 거다. 즉, 쉽게 말해 우리 대신 페이지를 24시간 동안 활성화되고 접근할 수 있도록 &lt;strong&gt;GitHub&lt;/strong&gt;에서 관리해주는 것이다.&lt;/p&gt;
