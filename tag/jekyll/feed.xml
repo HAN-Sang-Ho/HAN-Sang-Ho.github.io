@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://han-sang-ho.github.io/tag/jekyll/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://han-sang-ho.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-03-13T15:43:32+09:00</updated>
+  <updated>2021-03-15T01:04:36+09:00</updated>
   <id>https://han-sang-ho.github.io/tag/jekyll/feed.xml</id>
 
   
@@ -188,7 +188,15 @@
 
 &lt;p&gt;&lt;strong&gt;C:/blogmaker **폴더안에서 **_config.yml&lt;/strong&gt;을 찾아 해당내용을 자신에 맞게 수정해서 사용해야 한다.&lt;/p&gt;
 
-&lt;script src=&quot;https://gist.github.com/HAN-Sang-Ho/abb5761cdd32b71ab17e25627a9a9e07.js&quot;&gt;&lt;/script&gt;</content>
+&lt;script src=&quot;https://gist.github.com/HAN-Sang-Ho/abb5761cdd32b71ab17e25627a9a9e07.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;_config.yml 을 들어가보면 이렇게 긴 코드들이 뜰것이다.&lt;/p&gt;
+
+&lt;p&gt;대부분 주석처리가 되어 있기 때문에 정보를 수정하는데 큰 어려움이 없을 것이다.&lt;/p&gt;
+
+&lt;p&gt;(위에있는 코드를 그대로 사용하면 안됨. 본인의 정보에 맞게 수정)&lt;/p&gt;
+
+&lt;hr /&gt;</content>
 
       
       

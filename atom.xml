@@ -8,14 +8,9 @@
     
       
       <item>
-        <title>Python - 메모장을 만들어보자</title>
+        <title>Python - 나만의 메모장을 만들어보자.</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Python project. &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-calculator&quot;&gt;Python - 계산기를 만들어보자&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-memo&quot;&gt;Python - 메모장을 만들어보자&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
+          <description>&lt;p&gt;나만의 메모장을 만들&lt;/p&gt;
 </description>
         
         <pubDate>Sun, 08 Mar 2020 05:20:00 +0900</pubDate>
