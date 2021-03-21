@@ -240,6 +240,8 @@ into the {body} of the default.hbs template -->
 
 <p><img src="https://user-images.githubusercontent.com/79001968/111900949-a4c4c680-8a78-11eb-81c0-590f8c22855c.png" alt="창 생성하기" /></p>
 
+<hr />
+
 <p>창이 이렇게 만들어졌으면 텍스트 창과 버튼을 넣을 것이다.</p>
 
 <p>아래 코드를 대충 설명을 하면 프레임을 사용함으로서 구역을 나눠서 사용할 것이다.</p>
@@ -255,7 +257,7 @@ into the {body} of the default.hbs template -->
 
 <span class="n">win</span> <span class="o">=</span> <span class="n">Tk</span><span class="p">()</span>
 <span class="n">win</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"호노의 Memo"</span><span class="p">)</span>
-<span class="n">win</span><span class="o">.</span><span class="n">geometry</span><span class="p">(</span><span class="s">"300x300"</span><span class="p">)</span>
+<span class="n">win</span><span class="o">.</span><span class="n">geometry</span><span class="p">(</span><span class="s">"600x300"</span><span class="p">)</span>
 
 <span class="c"># 제목 프레임</span>
 <span class="n">title_frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="n">win</span><span class="p">)</span>
@@ -269,7 +271,52 @@ into the {body} of the default.hbs template -->
 
 <p><img src="https://user-images.githubusercontent.com/79001968/111900923-82cb4400-8a78-11eb-8fa9-81ade54c36c0.png" alt="날짜 생성" /></p>
 
-<p>​</p>
+<hr />
+
+<p>버튼을 생성해주자 안에 첫번째 버튼의 텍스트는 “저장”으로 하자.</p>
+
+<p>물론 이 저장버튼은 클릭을 했을 눌리는 작동은 하지만 함수를 정의해 주지 않았기에 아무 기능이 없다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 제목 프레임</span>
+<span class="n">title_frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="n">win</span><span class="p">)</span>
+<span class="n">title_frame</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="n">date_text</span> <span class="o">=</span> <span class="n">Label</span><span class="p">(</span><span class="n">title_frame</span><span class="p">,</span> <span class="n">text</span> <span class="o">=</span> <span class="n">date</span><span class="p">)</span>
+<span class="n">date_text</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="n">button_save</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="n">title_frame</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">"저장"</span><span class="p">)</span>
+<span class="n">button_save</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">fill</span><span class="o">=</span><span class="s">"both"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/79001968/111901476-d25f3f00-8a7b-11eb-86c8-cd4106d9361e.png" alt="저장 버튼" /></p>
+
+<hr />
+
+<p>이제 여러가지 위젯들을 하나씩 추가해보도록 하자.</p>
+
+<p>내용을 입력할 수 있는 텍스트창과 이 텍스트 내용을 리스트에 추가하고 삭제할 수 있는 버튼도 같이 추가해줬다.</p>
+
+<ul>
+  <li>프레임을 만들고 왼쪽에서부터 위젯을 순서대로 넣었다 라고 생각하면 된다.( 코드는 위에서부터 입력이 되는 구조) 만약 본인이 원하는 위치가 있다면 코드의 줄을 바꾸어서 배치도 해보자.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 파일 프레임</span>
+<span class="n">file_frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="n">win</span><span class="p">)</span>
+<span class="n">file_frame</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="n">txt</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="n">file_frame</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">heigh</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">txt</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s">"left"</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">txt</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">END</span><span class="p">,</span> <span class="s">"내용을 입력하세요"</span><span class="p">)</span>
+
+<span class="n">button_add</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="n">file_frame</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">"추가"</span><span class="p">)</span>
+<span class="n">button_add</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s">"left"</span><span class="p">)</span>
+
+<span class="n">button_del</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="n">file_frame</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">"삭제"</span><span class="p">)</span>
+<span class="n">button_del</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s">"left"</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/79001968/111905692-56232680-8a90-11eb-92d9-1d7d1c988759.png" alt="위젯 중간" /></p>
 
                 </div>
             </section>
