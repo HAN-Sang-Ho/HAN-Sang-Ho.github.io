@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://han-sang-ho.github.io/author/Hono/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://han-sang-ho.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-03-21T23:28:05+09:00</updated>
+  <updated>2021-03-21T23:44:34+09:00</updated>
   <id>https://han-sang-ho.github.io/author/Hono/feed.xml</id>
 
   
@@ -173,13 +173,13 @@
 
 &lt;p&gt;나는 컴퓨터로 공부하는 경우가 많기 때문에 메모장을 활용하는 경우가 많다.&lt;/p&gt;
 
-&lt;p&gt;그런데 몇가지 기능이 있으면 조금 더 편리하게 사용할 수 있겠다라는 생각을 해보았다.&lt;/p&gt;
+&lt;p&gt;그런데 몇 가지 기능이 있으면 조금 더 편리하게 사용할 수 있겠다는 생각을 해보았다.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;추가 버튼을 눌르면 기족의 작성되었던 텍스트는 위로 저장되고 텍스트창 초기화&lt;/p&gt;
+    &lt;p&gt;추가 버튼을 누르면 가족의 작성되었던 텍스트는 위로 저장되고 텍스트 창 초기화&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;저장 버튼을 누르면 자동으로 파일명 그날 날짜로 저장&lt;/p&gt;
@@ -192,7 +192,7 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;이정도로만 전체적인 프레임을 짜보고 만들어보자.&lt;/p&gt;
+&lt;p&gt;이 정도로만 전체적인 프레임을 짜보고 만들어보자.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -210,7 +210,7 @@
 &lt;span class=&quot;n&quot;&gt;win&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mainloop&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;tkinter를 가져와서 이렇게 코드 작성하면 밑에 사진처럼 창이 뜰것이다.&lt;/p&gt;
+&lt;p&gt;tkinter를 가져와서 이렇게 코드 작성하면 밑에 사진처럼 창이 뜰 것이다.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/79001968/111900949-a4c4c680-8a78-11eb-81c0-590f8c22855c.png&quot; alt=&quot;창 생성하기&quot; /&gt;&lt;/p&gt;
 
@@ -218,9 +218,9 @@
 
 &lt;p&gt;창이 이렇게 만들어졌으면 텍스트 창과 버튼을 넣을 것이다.&lt;/p&gt;
 
-&lt;p&gt;아래 코드를 대충 설명을 하면 프레임을 사용함으로서 구역을 나눠서 사용할 것이다.&lt;/p&gt;
+&lt;p&gt;아래 코드를 대충 설명을 하면 프레임을 사용함으로써 구역을 나눠서 사용할 것이다.&lt;/p&gt;
 
-&lt;p&gt;지금은 1개의 프레임이라서 보이지는 않지만 점차 프레임을 나눔으로서 위젯들의 배치를 보기 좋게 할 것이다.&lt;/p&gt;
+&lt;p&gt;지금은 1개의 프레임이라서 보이지는 않지만, 점차 프레임을 나눔으로써 위젯들의 배치를 보기 좋게 할 것이다&lt;/p&gt;
 
 &lt;p&gt;datetime 라이브러리를 가져와서 프레임 안에 라벨 위젯을 만들어주고 현재 날짜를 넣어줬다.&lt;/p&gt;
 
@@ -247,9 +247,9 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;버튼을 생성해주자 안에 첫번째 버튼의 텍스트는 “저장”으로 하자.&lt;/p&gt;
+&lt;p&gt;버튼을 생성해주자 안에 첫 번째 버튼의 텍스트는 “저장”으로 하자.&lt;/p&gt;
 
-&lt;p&gt;물론 이 저장버튼은 클릭을 했을 눌리는 작동은 하지만 함수를 정의해 주지 않았기에 아무 기능이 없다.&lt;/p&gt;
+&lt;p&gt;물론 이 저장 버튼은 클릭을 했을 눌리는 작동은 하지만 함수를 정의해 주지 않았기에 아무 기능이 없다.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 제목 프레임&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;title_frame&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;win&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -266,12 +266,12 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;이제 여러가지 위젯들을 하나씩 추가해보도록 하자.&lt;/p&gt;
+&lt;p&gt;이제 여러 가지 위젯들을 하나씩 추가해보도록 하자.&lt;/p&gt;
 
-&lt;p&gt;내용을 입력할 수 있는 텍스트창과 이 텍스트 내용을 리스트에 추가하고 삭제할 수 있는 버튼도 같이 추가해줬다.&lt;/p&gt;
+&lt;p&gt;내용을 입력할 수 있는 텍스트 창과 이 텍스트 내용을 리스트에 추가하고 삭제할 수 있는 버튼도 같이 추가해줬다.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;프레임을 만들고 왼쪽에서부터 위젯을 순서대로 넣었다 라고 생각하면 된다.( 코드는 위에서부터 입력이 되는 구조) 만약 본인이 원하는 위치가 있다면 코드의 줄을 바꾸어서 배치도 해보자.&lt;/li&gt;
+  &lt;li&gt;프레임을 만들고 왼쪽에서부터 위젯을 순서대로 넣었다고 생각하면 된다. ( 코드는 위에서부터 입력이 되는 구조) 만약 본인이 원하는 위치가 있다면 코드의 줄을 바꾸어서 배치도 해보자.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 파일 프레임&lt;/span&gt;
