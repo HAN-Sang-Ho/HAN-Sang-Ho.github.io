@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://han-sang-ho.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://han-sang-ho.github.io/" rel="alternate" type="text/html" /><updated>2021-03-21T23:44:34+09:00</updated><id>https://han-sang-ho.github.io/</id><title type="html">호노의 Technical Blog</title><subtitle>코딩 공부장</subtitle><entry><title type="html">Python - 나만의 메모장을 만들어보자.</title><link href="https://han-sang-ho.github.io/python-memo" rel="alternate" type="text/html" title="Python - 나만의 메모장을 만들어보자." /><published>2020-03-08T05:20:00+09:00</published><updated>2020-03-08T05:20:00+09:00</updated><id>https://han-sang-ho.github.io/python-memo</id><content type="html" xml:base="https://han-sang-ho.github.io/python-memo">&lt;h4 id=&quot;나만의-메모장을-만들기&quot;&gt;나만의 메모장을 만들기&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://han-sang-ho.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://han-sang-ho.github.io/" rel="alternate" type="text/html" /><updated>2021-03-22T00:54:40+09:00</updated><id>https://han-sang-ho.github.io/</id><title type="html">호노의 Technical Blog</title><subtitle>코딩 공부장</subtitle><entry><title type="html">Python - 나만의 메모장을 만들어보자.</title><link href="https://han-sang-ho.github.io/python-memo" rel="alternate" type="text/html" title="Python - 나만의 메모장을 만들어보자." /><published>2020-03-08T05:20:00+09:00</published><updated>2020-03-08T05:20:00+09:00</updated><id>https://han-sang-ho.github.io/python-memo</id><content type="html" xml:base="https://han-sang-ho.github.io/python-memo">&lt;h4 id=&quot;나만의-메모장을-만들기&quot;&gt;나만의 메모장을 만들기&lt;/h4&gt;
 
 &lt;p&gt;python을 이용해 기본적인 나만의 메모장을 만들어 보려 한다.&lt;/p&gt;
 
@@ -121,7 +121,86 @@
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/79001968/111905692-56232680-8a90-11eb-92d9-1d7d1c988759.png&quot; alt=&quot;위젯 중간&quot; /&gt;&lt;/p&gt;</content><author><name>Hono</name></author><category term="python" /><summary type="html">나만의 메모장을 만들기</summary></entry><entry><title type="html">Python - 계산기를 만들어보자</title><link href="https://han-sang-ho.github.io/python-calculator" rel="alternate" type="text/html" title="Python - 계산기를 만들어보자" /><published>2020-03-08T05:20:00+09:00</published><updated>2020-03-08T05:20:00+09:00</updated><id>https://han-sang-ho.github.io/python-calculator</id><content type="html" xml:base="https://han-sang-ho.github.io/python-calculator">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Python project. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/79001968/111905692-56232680-8a90-11eb-92d9-1d7d1c988759.png&quot; alt=&quot;위젯 중간&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;이제 버튼들이 추가되었다면 리스트를 리스트 박스를 추가하도록 하자.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#리스트 프레임&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list_frame&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;win&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list_frame&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;both&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;padx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pady&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;scrollbar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Scrollbar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;scrollbar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;side&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;right&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;y&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;list_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Listbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;selectmode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;extended&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yscrollcommand&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scrollbar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list_file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;side&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;left&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;both&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expand&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;scrollbar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yview&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/79001968/111910262-051d2d80-8aa4-11eb-992d-37898c961f30.png&quot; alt=&quot;리스트&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;나는 여기서 리스트 박스가 중간에 가도록 하는 것이 편할 것 같아서 #제목 프레임과 #&lt;/p&gt;
+
+&lt;p&gt;파일 프레임 사이에 #리스트 박스를 코딩하였다.&lt;/p&gt;
+
+&lt;p&gt;이렇게 하면 이제 레이아웃은 다잡았다고 할 수 있다. 이제는 함수를 정의해주고 기능들을 구현해보도록 하자.&lt;/p&gt;
+
+&lt;p&gt;​	list_file - selectmode 파라미터에 대한 정보&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;browse : 단일 선택, 방향키 이동 시 선택&lt;/li&gt;
+  &lt;li&gt;single : 단일 선택, 방향키 이동 후 스페이스바로 선택&lt;/li&gt;
+  &lt;li&gt;multiple : 다중 선택, 마우스 클릭이나 방향키 이동 후 스페이스바로 선택&lt;/li&gt;
+  &lt;li&gt;extended : 다중 선택, 마우스 드래그나 쉬프트키 + 방향키 이동으로 선택&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tkinter.messagebox&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msbox&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'.txt'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;saveFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;w&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;END&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;msbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;showinfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;알림&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;정상적으로 저장되었습니다.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;button_save&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;padx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pady&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;저장&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;saveFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;button_save&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;both&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;알림 기능을 사용하기 위해 messagebox를 import 해주자.&lt;/p&gt;
+
+&lt;p&gt;filename을 현재 시각으로 저장하기 위해 date 메소드를 사용하고 숫자 형이기에 str로 묶어준다. 이후 + .txt를 작성해주면 파일명이 20xx-xx-xx.txt로 저장이 된다.&lt;/p&gt;
+
+&lt;p&gt;이렇게 save File 함수를 정의해 준 뒤 원래 있던 button_save에 command=save File을 추가해주도록 하자.&lt;/p&gt;
+
+&lt;p&gt;이러면 이제 ‘저장’ 버튼을 눌렀을 때 해당 날짜.txt 파일로 저장이 된다.&lt;/p&gt;
+
+&lt;p&gt;위에 함수에 대해서 간단하게 설명을 하자면&lt;/p&gt;
+
+&lt;p&gt;파일을 쓰기 상태로 생성을 한 뒤, 첫 번째 글자부터 마지막까지 파일을 str 형태로 변환 후 가져온다. (str를 사용하는 이유는 숫자의 형태도 함께 저장하기 위해)&lt;/p&gt;
+
+&lt;p&gt;생성한 파일에 가져온 텍스트를 작성하고 파일을 닫아줘야 파일이 저장되는 구조이다.&lt;/p&gt;
+
+&lt;p&gt;마지막으로 저장이 되었는지 확인을 하기 위해 messagebox를 이용해 알림 기능을 넣는다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/79001968/111911223-fa649780-8aa7-11eb-98bb-e1962561f08b.png&quot; alt=&quot;저장 창&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;저장 버튼을 눌렀을 때 알림창&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/79001968/111911283-444d7d80-8aa8-11eb-8f58-c772d3d62ec4.png&quot; alt=&quot;파일 저장&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;파일이 현재 날짜.txt 파일로 저장되는 것을 확인 할 수 있다.&lt;/p&gt;
+
+&lt;hr /&gt;</content><author><name>Hono</name></author><category term="python" /><summary type="html">나만의 메모장을 만들기</summary></entry><entry><title type="html">Python - 계산기를 만들어보자</title><link href="https://han-sang-ho.github.io/python-calculator" rel="alternate" type="text/html" title="Python - 계산기를 만들어보자" /><published>2020-03-08T05:20:00+09:00</published><updated>2020-03-08T05:20:00+09:00</updated><id>https://han-sang-ho.github.io/python-calculator</id><content type="html" xml:base="https://han-sang-ho.github.io/python-calculator">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Python project. &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./python-calculator&quot;&gt;Python - 계산기를 만들어보자&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-memo&quot;&gt;Python - 메모장을 만들어보자&lt;/a&gt;&lt;/li&gt;
