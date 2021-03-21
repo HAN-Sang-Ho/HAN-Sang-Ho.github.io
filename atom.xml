@@ -10,7 +10,7 @@
       <item>
         <title>Python - 나만의 메모장을 만들어보자.</title>
         
-          <description>&lt;h4 id=&quot;나만의-메모장을-만들기&quot;&gt;나만의 메모장을 만들기&lt;/h4&gt;
+          <description>&lt;h4 id=&quot;-나만의-메모장을-만들기&quot;&gt;&lt;i class=&quot;fa fa-list-alt&quot;&gt;&lt;/i&gt; 나만의 메모장을 만들기&lt;/h4&gt;
 
 </description>
         
@@ -18,25 +18,6 @@
         <link>
         https://HAN-Sang-Ho.github.io/python-memo</link>
         <guid isPermaLink="true">https://HAN-Sang-Ho.github.io/python-memo</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Python - 계산기를 만들어보자</title>
-        
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Python project. &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-calculator&quot;&gt;Python - 계산기를 만들어보자&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-memo&quot;&gt;Python - 메모장을 만들어보자&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        
-        <pubDate>Sun, 08 Mar 2020 05:20:00 +0900</pubDate>
-        <link>
-        https://HAN-Sang-Ho.github.io/python-calculator</link>
-        <guid isPermaLink="true">https://HAN-Sang-Ho.github.io/python-calculator</guid>
       </item>
       
     

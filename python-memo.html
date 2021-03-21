@@ -193,7 +193,7 @@ into the {body} of the default.hbs template -->
             -->
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <h4 id="나만의-메모장을-만들기">나만의 메모장을 만들기</h4>
+                    <h4 id="-나만의-메모장을-만들기"><i class="fa fa-list-alt"></i> 나만의 메모장을 만들기</h4>
 
 <p>python을 이용해 기본적인 나만의 메모장을 만들어 보려 한다.</p>
 
@@ -222,7 +222,7 @@ into the {body} of the default.hbs template -->
 
 <hr />
 
-<p>tkinter 라이브러리를 통하여 GUI 프로그램을 사용하자</p>
+<p><i class="fa fa-pencil-square-o"></i> tkinter 라이브러리를 통하여 GUI 프로그램을 사용하자</p>
 
 <ol>
   <li>창 생성하기</li>
@@ -242,7 +242,7 @@ into the {body} of the default.hbs template -->
 
 <hr />
 
-<p>창이 이렇게 만들어졌으면 텍스트 창과 버튼을 넣을 것이다.</p>
+<p><i class="fa fa-pencil-square-o"></i> 창이 이렇게 만들어졌으면 텍스트 창과 버튼을 넣을 것이다.</p>
 
 <p>아래 코드를 대충 설명을 하면 프레임을 사용함으로써 구역을 나눠서 사용할 것이다.</p>
 
@@ -273,7 +273,7 @@ into the {body} of the default.hbs template -->
 
 <hr />
 
-<p>버튼을 생성해주자 안에 첫 번째 버튼의 텍스트는 “저장”으로 하자.</p>
+<p><i class="fa fa-pencil-square-o"></i> 버튼을 생성해주자 안에 첫 번째 버튼의 텍스트는 “저장”으로 하자.</p>
 
 <p>물론 이 저장 버튼은 클릭을 했을 눌리는 작동은 하지만 함수를 정의해 주지 않았기에 아무 기능이 없다.</p>
 
@@ -292,7 +292,7 @@ into the {body} of the default.hbs template -->
 
 <hr />
 
-<p>이제 여러 가지 위젯들을 하나씩 추가해보도록 하자.</p>
+<p><i class="fa fa-pencil-square-o"></i> 이제 여러 가지 위젯들을 하나씩 추가해보도록 하자.</p>
 
 <p>내용을 입력할 수 있는 텍스트 창과 이 텍스트 내용을 리스트에 추가하고 삭제할 수 있는 버튼도 같이 추가해줬다.</p>
 
@@ -320,7 +320,7 @@ into the {body} of the default.hbs template -->
 
 <hr />
 
-<p>이제 버튼들이 추가되었다면 리스트를 리스트 박스를 추가하도록 하자.</p>
+<p><i class="fa fa-pencil-square-o"></i> 이제 버튼들이 추가되었다면 리스트를 리스트 박스를 추가하도록 하자.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#리스트 프레임</span>
 <span class="n">list_frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="n">win</span><span class="p">)</span>
@@ -352,6 +352,8 @@ into the {body} of the default.hbs template -->
 </ul>
 
 <hr />
+
+<p><i class="fa fa-pencil-square-o"></i> 이제 함수를 정의해 보도록 하자.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">tkinter.messagebox</span> <span class="k">as</span> <span class="n">msbox</span>
 </code></pre></div></div>
@@ -396,6 +398,61 @@ into the {body} of the default.hbs template -->
 <p>파일이 현재 날짜.txt 파일로 저장되는 것을 확인 할 수 있다.</p>
 
 <hr />
+
+<p><i class="fa fa-pencil-square-o"></i> 이제 ‘추가’,’삭제’ 버튼도 함수를 정의해 준 뒤 버튼에 커맨드를 해주면 된다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#함수 정의</span>
+<span class="k">def</span> <span class="nf">saveFile</span><span class="p">():</span>
+    <span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">"w"</span><span class="p">)</span>
+    <span class="n">ts</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">list_file</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">END</span><span class="p">))</span>
+    <span class="nb">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">ts</span><span class="p">)</span>
+    <span class="nb">file</span><span class="o">.</span><span class="n">close</span>
+    <span class="n">msbox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="s">"알림"</span><span class="p">,</span> <span class="s">"정상적으로 저장되었습니다."</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">addList</span><span class="p">():</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="n">txt</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"1.0"</span><span class="p">,</span> <span class="n">END</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">index</span> <span class="o">==</span> <span class="s">''</span><span class="p">:</span>
+        <span class="k">return</span>
+    <span class="n">list_file</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">END</span><span class="p">,</span> <span class="n">txt</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"1.0"</span><span class="p">,</span> <span class="n">END</span><span class="p">))</span>
+    <span class="n">txt</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="s">"1.0"</span><span class="p">,</span> <span class="n">END</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">deleteList</span><span class="p">():</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="n">list_file</span><span class="o">.</span><span class="n">curselection</span><span class="p">()</span>
+    <span class="n">list_file</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">button_add</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="n">file_frame</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">"추가"</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">addList</span><span class="p">)</span>
+<span class="n">button_add</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s">"left"</span><span class="p">)</span>
+
+<span class="n">button_del</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="n">file_frame</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">"삭제"</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">deleteList</span><span class="p">)</span>
+<span class="n">button_del</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s">"left"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<hr />
+
+<p><i class="fa fa-pencil-square-o"></i> 마지막 단계이다. 이 계산기 파일을 exe 파일로 만들어줄 것이다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pip</span> <span class="n">install</span> <span class="n">pyinstaller</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">c</span><span class="p">:</span>\<span class="n">myfolder</span><span class="o">&gt;</span><span class="n">pyinstaller</span> <span class="n">example</span><span class="o">.</span><span class="n">py</span>
+</code></pre></div></div>
+
+<p>위의 명령어를 터미널에 입력하면 build, dist 파일과 example.spec이 생성된다.</p>
+
+<p>여기서 dist 파일에 들어가면 example.exe 파일이 생성된 것을 확인 할 수 있다.</p>
+
+<p>(주의할 점!) 파일저장 경로와 파일에 띄어쓰기가 있으면 오류가 난다. 혹시 파일명과 폴더명에 띄어쓰기가 있다면 수정하도록 하자.</p>
+
+<p><img src="https://user-images.githubusercontent.com/79001968/111913108-f8063b80-8aaf-11eb-9bd5-24e84febb674.png" alt="exe" /></p>
+
+<hr />
+
+<p><i class="fa fa-smile-o"></i> 이로써 나만의 메모장 만들기를 마무리!</p>
+
+<p><img src="https://user-images.githubusercontent.com/79001968/111913185-56331e80-8ab0-11eb-82a7-7c0740f98da3.png" alt="마무리" /></p>
+
+<script src="https://gist.github.com/HAN-Sang-Ho/f095afee62a7db69d0755b2b1fc93af6.js"></script>
 
 
                 </div>
@@ -490,51 +547,6 @@ into the {body} of the default.hbs template -->
                 
                 
                 
-                    <article class="read-next-card"
-                        
-                            style="background-image: url(/assets/built/images/blog-cover1.png)"
-                        
-                    >
-                        <header class="read-next-card-header">
-                            <small class="read-next-card-header-sitetitle">&mdash; 호노의 Technical Blog &mdash;</small>
-                            
-                                <h3 class="read-next-card-header-title"><a href="/tag/python/">Python</a></h3>
-                            
-                        </header>
-                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
-</div>
-                        <div class="read-next-card-content">
-                            <ul>
-                                
-                                
-                                  
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/python-calculator">Python - 계산기를 만들어보자</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                            </ul>
-                        </div>
-                        <footer class="read-next-card-footer">
-                            <a href="/tag/python/">
-                                
-                                    See all 1 posts  →
-                                
-                            </a>
-                        </footer>
-                    </article>
-                
             
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
@@ -546,22 +558,22 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/python-calculator">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/python-logo.png)"></div>
+            <a class="post-card-image-link" href="/jekyll-basic2">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/jekyll-logo.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/python-calculator">
+            <a class="post-card-content-link" href="/jekyll-basic2">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Python</span>
+                                <span class="post-card-tags">Jekyll</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Python - 계산기를 만들어보자</h2>
+                    <h2 class="post-card-title">Jekyll - 나의 블로그를 수정해보자 & Publishing</h2>
                 </header>
                 <section class="post-card-excerpt">
                     

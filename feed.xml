@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://han-sang-ho.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://han-sang-ho.github.io/" rel="alternate" type="text/html" /><updated>2021-03-22T00:54:40+09:00</updated><id>https://han-sang-ho.github.io/</id><title type="html">호노의 Technical Blog</title><subtitle>코딩 공부장</subtitle><entry><title type="html">Python - 나만의 메모장을 만들어보자.</title><link href="https://han-sang-ho.github.io/python-memo" rel="alternate" type="text/html" title="Python - 나만의 메모장을 만들어보자." /><published>2020-03-08T05:20:00+09:00</published><updated>2020-03-08T05:20:00+09:00</updated><id>https://han-sang-ho.github.io/python-memo</id><content type="html" xml:base="https://han-sang-ho.github.io/python-memo">&lt;h4 id=&quot;나만의-메모장을-만들기&quot;&gt;나만의 메모장을 만들기&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://han-sang-ho.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://han-sang-ho.github.io/" rel="alternate" type="text/html" /><updated>2021-03-22T02:12:47+09:00</updated><id>https://han-sang-ho.github.io/</id><title type="html">호노의 Technical Blog</title><subtitle>코딩 공부장</subtitle><entry><title type="html">Python - 나만의 메모장을 만들어보자.</title><link href="https://han-sang-ho.github.io/python-memo" rel="alternate" type="text/html" title="Python - 나만의 메모장을 만들어보자." /><published>2020-03-08T05:20:00+09:00</published><updated>2020-03-08T05:20:00+09:00</updated><id>https://han-sang-ho.github.io/python-memo</id><content type="html" xml:base="https://han-sang-ho.github.io/python-memo">&lt;h4 id=&quot;-나만의-메모장을-만들기&quot;&gt;&lt;i class=&quot;fa fa-list-alt&quot;&gt;&lt;/i&gt; 나만의 메모장을 만들기&lt;/h4&gt;
 
 &lt;p&gt;python을 이용해 기본적인 나만의 메모장을 만들어 보려 한다.&lt;/p&gt;
 
@@ -27,7 +27,7 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;tkinter 라이브러리를 통하여 GUI 프로그램을 사용하자&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;fa fa-pencil-square-o&quot;&gt;&lt;/i&gt; tkinter 라이브러리를 통하여 GUI 프로그램을 사용하자&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;창 생성하기&lt;/li&gt;
@@ -47,7 +47,7 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;창이 이렇게 만들어졌으면 텍스트 창과 버튼을 넣을 것이다.&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;fa fa-pencil-square-o&quot;&gt;&lt;/i&gt; 창이 이렇게 만들어졌으면 텍스트 창과 버튼을 넣을 것이다.&lt;/p&gt;
 
 &lt;p&gt;아래 코드를 대충 설명을 하면 프레임을 사용함으로써 구역을 나눠서 사용할 것이다.&lt;/p&gt;
 
@@ -78,7 +78,7 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;버튼을 생성해주자 안에 첫 번째 버튼의 텍스트는 “저장”으로 하자.&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;fa fa-pencil-square-o&quot;&gt;&lt;/i&gt; 버튼을 생성해주자 안에 첫 번째 버튼의 텍스트는 “저장”으로 하자.&lt;/p&gt;
 
 &lt;p&gt;물론 이 저장 버튼은 클릭을 했을 눌리는 작동은 하지만 함수를 정의해 주지 않았기에 아무 기능이 없다.&lt;/p&gt;
 
@@ -97,7 +97,7 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;이제 여러 가지 위젯들을 하나씩 추가해보도록 하자.&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;fa fa-pencil-square-o&quot;&gt;&lt;/i&gt; 이제 여러 가지 위젯들을 하나씩 추가해보도록 하자.&lt;/p&gt;
 
 &lt;p&gt;내용을 입력할 수 있는 텍스트 창과 이 텍스트 내용을 리스트에 추가하고 삭제할 수 있는 버튼도 같이 추가해줬다.&lt;/p&gt;
 
@@ -125,7 +125,7 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;이제 버튼들이 추가되었다면 리스트를 리스트 박스를 추가하도록 하자.&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;fa fa-pencil-square-o&quot;&gt;&lt;/i&gt; 이제 버튼들이 추가되었다면 리스트를 리스트 박스를 추가하도록 하자.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#리스트 프레임&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;list_frame&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;win&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -157,6 +157,8 @@
 &lt;/ul&gt;
 
 &lt;hr /&gt;
+
+&lt;p&gt;&lt;i class=&quot;fa fa-pencil-square-o&quot;&gt;&lt;/i&gt; 이제 함수를 정의해 보도록 하자.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tkinter.messagebox&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msbox&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -200,20 +202,62 @@
 
 &lt;p&gt;파일이 현재 날짜.txt 파일로 저장되는 것을 확인 할 수 있다.&lt;/p&gt;
 
-&lt;hr /&gt;</content><author><name>Hono</name></author><category term="python" /><summary type="html">나만의 메모장을 만들기</summary></entry><entry><title type="html">Python - 계산기를 만들어보자</title><link href="https://han-sang-ho.github.io/python-calculator" rel="alternate" type="text/html" title="Python - 계산기를 만들어보자" /><published>2020-03-08T05:20:00+09:00</published><updated>2020-03-08T05:20:00+09:00</updated><id>https://han-sang-ho.github.io/python-calculator</id><content type="html" xml:base="https://han-sang-ho.github.io/python-calculator">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Python project. &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-calculator&quot;&gt;Python - 계산기를 만들어보자&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-memo&quot;&gt;Python - 메모장을 만들어보자&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;이 페이지는 파이썬 공부장입니다!&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;fa fa-pencil-square-o&quot;&gt;&lt;/i&gt; 이제 ‘추가’,’삭제’ 버튼도 함수를 정의해 준 뒤 버튼에 커맨드를 해주면 된다.&lt;/p&gt;
 
-&lt;p&gt;#루즈 코드 입력기&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#함수 정의&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;saveFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;w&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;END&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;msbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;showinfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;알림&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;정상적으로 저장되었습니다.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;syntaxHighlight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Hello World'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-   &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Hono</name></author><category term="python" /><summary type="html">Python project. Python - 계산기를 만들어보자 Python - 메모장을 만들어보자</summary></entry><entry><title type="html">Jekyll - 나의 블로그를 수정해보자 &amp;amp; Publishing</title><link href="https://han-sang-ho.github.io/jekyll-basic2" rel="alternate" type="text/html" title="Jekyll - 나의 블로그를 수정해보자 &amp; Publishing" /><published>2020-03-08T05:20:00+09:00</published><updated>2020-03-08T05:20:00+09:00</updated><id>https://han-sang-ho.github.io/jekyll-basic2</id><content type="html" xml:base="https://han-sang-ho.github.io/jekyll-basic2">&lt;p&gt;&lt;i class=&quot;fa fa-list-alt&quot;&gt;&lt;/i&gt;저번 포스팅에서는  여러가지 환경 구축과 블로그를 내장 웹서버를 통해 블로그를 내화면에 띄우는데 까지 해봤다.&lt;/p&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;addList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;txt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;END&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;list_file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;insert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;END&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;txt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;END&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;txt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;END&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;deleteList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list_file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;curselection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;list_file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;button_add&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;padx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pady&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;추가&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;addList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;button_add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;side&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;left&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;button_del&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;padx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pady&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;삭제&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deleteList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;button_del&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;side&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;left&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;i class=&quot;fa fa-pencil-square-o&quot;&gt;&lt;/i&gt; 마지막 단계이다. 이 계산기 파일을 exe 파일로 만들어줄 것이다.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyinstaller&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;\&lt;span class=&quot;n&quot;&gt;myfolder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pyinstaller&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위의 명령어를 터미널에 입력하면 build, dist 파일과 example.spec이 생성된다.&lt;/p&gt;
+
+&lt;p&gt;여기서 dist 파일에 들어가면 example.exe 파일이 생성된 것을 확인 할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;(주의할 점!) 파일저장 경로와 파일에 띄어쓰기가 있으면 오류가 난다. 혹시 파일명과 폴더명에 띄어쓰기가 있다면 수정하도록 하자.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/79001968/111913108-f8063b80-8aaf-11eb-9bd5-24e84febb674.png&quot; alt=&quot;exe&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;i class=&quot;fa fa-smile-o&quot;&gt;&lt;/i&gt; 이로써 나만의 메모장 만들기를 마무리!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/79001968/111913185-56331e80-8ab0-11eb-82a7-7c0740f98da3.png&quot; alt=&quot;마무리&quot; /&gt;&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/HAN-Sang-Ho/f095afee62a7db69d0755b2b1fc93af6.js&quot;&gt;&lt;/script&gt;</content><author><name>Hono</name></author><category term="python" /><summary type="html">나만의 메모장을 만들기</summary></entry><entry><title type="html">Jekyll - 나의 블로그를 수정해보자 &amp;amp; Publishing</title><link href="https://han-sang-ho.github.io/jekyll-basic2" rel="alternate" type="text/html" title="Jekyll - 나의 블로그를 수정해보자 &amp; Publishing" /><published>2020-03-08T05:20:00+09:00</published><updated>2020-03-08T05:20:00+09:00</updated><id>https://han-sang-ho.github.io/jekyll-basic2</id><content type="html" xml:base="https://han-sang-ho.github.io/jekyll-basic2">&lt;p&gt;&lt;i class=&quot;fa fa-list-alt&quot;&gt;&lt;/i&gt;저번 포스팅에서는  여러가지 환경 구축과 블로그를 내장 웹서버를 통해 블로그를 내화면에 띄우는데 까지 해봤다.&lt;/p&gt;
 
 &lt;hr /&gt;
 
